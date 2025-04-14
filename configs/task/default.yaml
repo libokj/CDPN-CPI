@@ -1,0 +1,9 @@
+task: null
+num_classes: null
+
+out:
+  _target_: torch.nn.Identity
+loss:
+  _target_: torch.nn.Identity
+activation:
+  _target_: torch.nn.Identity

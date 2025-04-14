@@ -1,0 +1,4 @@
+AUROC:
+  _target_: torchmetrics.AUROC
+  task: ${task.task}
+  num_classes: ${task.num_classes}

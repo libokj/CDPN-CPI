@@ -1,0 +1,2 @@
+CI:
+  _target_: deepseqreen.models.metrics.ci.ConcordanceIndex

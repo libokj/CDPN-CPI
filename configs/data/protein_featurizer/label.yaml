@@ -1,0 +1,13 @@
+#_target_: deepseqreen.data.featurizers.categorical.fasta_to_label
+#_partial_: true
+#
+#max_sequence_length: 1000
+##in_channels: 26
+
+_target_: deepseqreen.data.featurizers.categorical.sequence_to_label
+_partial_: true
+charset: ['A', 'C', 'B', 'E', 'D', 'G', 'F', 'I', 'H', 'K', 'M', 'L', 'O',
+          'N', 'Q', 'P', 'S', 'R', 'U', 'T', 'W', 'V', 'Y', 'X', 'Z']
+
+max_sequence_length: 1500
+pad_to_max: true

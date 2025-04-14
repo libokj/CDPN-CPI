@@ -1,0 +1,15 @@
+_target_: deepseqreen.models.components.cnn.LazyCNN
+
+# max_sequence_length: ${data.drug_featurizer.max_sequence_length}
+num_features: 87
+embed_dim: 128
+filters: [32, 64, 96]
+kernels: [4, 6, 8]
+# in_channels: ${data.drug_featurizer.in_channels}
+out_channels: null
+
+activation:
+  _target_: torch.nn.ReLU
+pool:
+  _target_: torch.nn.AdaptiveAvgPool1d
+  output_size: 1

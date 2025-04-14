@@ -1,0 +1,20 @@
+k_target_: deepseqreen.models.components.cnn.PretrainOnLazyCNN
+
+pretrain:
+  _target_: transformers.EsmModel.from_pretrained
+  pretrained_model_name_or_path: resources/models/esm2_t6_8M_UR50D
+  return_dict: true
+
+freeze_layers: null
+
+num_features: null
+embed_dim: null
+filters: [32, 64, 96]  # [32]  # [32, 64, 96]
+kernels: [4, 8, 12]  # [8]  # [4, 8, 12]
+# in_channels: ${data.protein_featurizer.in_channels}
+out_channels: null # 512 # 128  # 256
+activation:
+  _target_: torch.nn.ReLU
+pool:
+  _target_: torch.nn.AdaptiveAvgPool1d
+  output_size: 1

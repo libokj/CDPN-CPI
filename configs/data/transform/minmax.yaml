@@ -1,0 +1,5 @@
+_target_: deepseqreen.data.utils.transform
+_partial_: true
+
+scaler:
+  _target_: sklearn.preprocessing.MinMaxScaler

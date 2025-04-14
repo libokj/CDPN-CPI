@@ -1,0 +1,6 @@
+defaults:
+  - drug_encoder: null
+  - protein_encoder: null
+  - decoder: null
+
+_target_: deepseqreen.models.predictors.custom.CustomPredictor

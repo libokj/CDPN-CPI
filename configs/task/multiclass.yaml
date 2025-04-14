@@ -1,0 +1,12 @@
+task: multiclass
+num_classes: 3
+
+out:
+  _target_: torch.nn.LazyLinear
+  out_features: ${num_classes}
+
+loss:
+  _target_: torch.nn.CrossEntropyLoss
+
+activation:
+  _target_: torch.nn.Softmax

@@ -1,0 +1,4 @@
+_target_: deepseqreen.models.predictors.mol_trans.CNNDecoder
+
+dropout: 0.1
+hidden_size: 384

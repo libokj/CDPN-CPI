@@ -1,0 +1,10 @@
+#_target_: torch.utils.data.random_split
+#_partial_: true
+
+#generator:
+#  _target_: torch.Generator # will use global seed set by lightning.seed_everything or torch.manual_seed automatically
+
+_target_: deepseqreen.data.utils.split.random_split
+_partial_: true
+
+seed: ${seed}

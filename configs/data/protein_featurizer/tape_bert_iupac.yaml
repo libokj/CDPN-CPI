@@ -1,0 +1,10 @@
+_target_: deepseqreen.data.featurizers.token.sequence_to_pretrain
+_partial_: true
+
+tokenizer:
+  _target_: tape.TAPETokenizer.from_pretrained
+  vocab: iupac
+
+pretrain:
+  _target_: tape.ProteinBertModel.from_pretrained
+  pretrained_model_name_or_path: bert-base  # resources/models/tape/bert-base/

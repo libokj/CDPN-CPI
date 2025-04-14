@@ -1,0 +1,22 @@
+_target_: lightning.Trainer
+
+default_root_dir: ${paths.output_dir}
+
+min_epochs: 1
+max_epochs: 50
+
+precision: 32
+accelerator: auto
+devices: auto
+
+gradient_clip_val: 0.5
+gradient_clip_algorithm: norm
+
+accumulate_grad_batches: 1
+
+# deterministic algorithms might make training slower but offers more reproducibility than only setting seeds
+# True: use deterministic always, throwing an error on an operation that doesn't support deterministic
+# warn: use deterministic when possible, throwing warnings on operations that don’t support deterministic
+deterministic: warn
+
+inference_mode: True

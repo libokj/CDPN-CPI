@@ -1,0 +1,7 @@
+_target_: deepseqreen.models.components.cnn.CNN1D
+
+num_features: 26
+embed_dim: 128
+filter: 32
+kernel: 8
+out_features: 128

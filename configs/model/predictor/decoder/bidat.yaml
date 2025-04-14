@@ -1,0 +1,9 @@
+_target_: deepseqreen.models.predictors.bacpi.BidirectionalAttentionNetwork
+
+latent_dim: 80
+dropout: 0.1
+# alpha: 0.1
+bidat_num: 4
+activation:
+  _target_: torch.nn.LeakyReLU
+  negative_slope: 0.1

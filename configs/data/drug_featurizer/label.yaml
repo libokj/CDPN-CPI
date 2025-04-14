@@ -1,0 +1,16 @@
+#_target_: deepseqreen.data.featurizers.categorical.smiles_to_label
+#_partial_: true
+#
+#max_sequence_length: 100
+##in_channels: 63
+
+_target_: deepseqreen.data.featurizers.categorical.sequence_to_label
+_partial_: true
+charset: ['#', '%', ')', '(', '+', '-', '.', '1', '0', '3', '2', '5', '4',
+          '7', '6', '9', '8', '=', 'A', 'C', 'B', 'E', 'D', 'G', 'F', 'I',
+          'H', 'K', 'M', 'L', 'O', 'N', 'P', 'S', 'R', 'U', 'T', 'W', 'V',
+          'Y', '[', 'Z', ']', '_', 'a', 'c', 'b', 'e', 'd', 'g', 'f', 'i',
+          'h', 'm', 'l', 'o', 'n', 's', 'r', 'u', 't', 'y']
+
+max_sequence_length: 100
+pad_to_max: true

@@ -1,0 +1,22 @@
+# @package _global_
+defaults:
+  - override /data/drug_featurizer: graph
+  - override /data/protein_featurizer: label
+  - override /model/predictor: graph_dta
+  - override /model/predictor/drug_encoder@model.predictor.gnn: gin
+
+data:
+  batch_size: 512
+  drug_featurizer:
+    atom_features:
+      _target_: deepseqreen.models.predictors.graph_dta.atom_features
+      _partial_: true
+
+model:
+  predictor:
+    gnn:
+      num_features: 78
+  optimizer:
+    lr: 5e-4
+
+

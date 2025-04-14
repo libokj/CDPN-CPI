@@ -1,0 +1,2 @@
+_target_: deepseqreen.data.featurizers.graph.smiles_to_graph
+_partial_: true

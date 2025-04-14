@@ -1,0 +1,5 @@
+_target_: deepseqreen.models.components.gat.GAT
+
+num_features: 78
+out_channels: 128
+dropout: 0.2

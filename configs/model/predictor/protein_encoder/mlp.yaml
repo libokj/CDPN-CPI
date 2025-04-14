@@ -1,0 +1,4 @@
+_target_: deepseqreen.models.components.mlp.LazyMLP
+
+hidden_channels: [1024, 512]
+dropout: 0.2

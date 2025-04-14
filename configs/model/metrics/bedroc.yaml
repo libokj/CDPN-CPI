@@ -1,0 +1,3 @@
+BEDROC:
+  _target_: deepseqreen.models.metrics.bedroc.BEDROC
+  alpha: 80.5

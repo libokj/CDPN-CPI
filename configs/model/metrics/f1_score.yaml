@@ -1,0 +1,4 @@
+F1Score0_5:
+  _target_: torchmetrics.F1Score
+  task: ${task.task}
+  num_classes: ${task.num_classes}

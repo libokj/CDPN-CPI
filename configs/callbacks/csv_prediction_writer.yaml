@@ -1,0 +1,4 @@
+csv_prediction_writer:
+  _target_: deepseqreen.utils.lightning.CSVPredictionWriter
+  output_dir: ${paths.output_dir}
+  write_interval: batch

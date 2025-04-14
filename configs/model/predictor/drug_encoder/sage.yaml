@@ -1,0 +1,7 @@
+_target_: deepseqreen.models.predictors.pmf_cpi.SAGE
+
+num_features: 87  # 78
+out_channels: 128
+dropout: 0.2
+pool: true
+add_super_node: false

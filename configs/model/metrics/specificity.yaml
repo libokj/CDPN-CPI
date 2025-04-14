@@ -1,0 +1,4 @@
+Specificity0_5:
+  _target_: torchmetrics.Specificity
+  task: ${task.task}
+  num_classes: ${task.num_classes}

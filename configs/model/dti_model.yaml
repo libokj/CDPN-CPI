@@ -1,0 +1,16 @@
+_target_: deepseqreen.models.dti.DTILightningModule
+
+defaults:
+  - _self_
+  - optimizer: adam
+  - lr_scheduler: default
+  - predictor: null
+  - metrics: null
+  - loss: null
+  - out: null
+  - activation: null
+
+out: ${task.out}
+loss: ${task.loss}
+activation: ${task.activation}
+metrics: ${oc.select:task.metrics, null}

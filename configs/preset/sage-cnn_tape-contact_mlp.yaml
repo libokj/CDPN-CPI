@@ -1,0 +1,26 @@
+# @package _global_
+defaults:
+  - override /model/predictor: custom
+  - override /model/predictor/drug_encoder: sage
+  - override /data/drug_featurizer: graph_ablation
+  - override /model/predictor/protein_encoder: cnn
+  - override /data/protein_featurizer: tape_bert_iupac
+  - override /model/predictor/decoder: concat_mlp
+
+data:
+  batch_size: 64 # 512
+  collator:
+    automatic_padding: True
+
+model:
+  predictor:
+    drug_encoder:
+      pool: true
+    protein_encoder:
+      pool: true
+
+  optimizer:
+    lr: 1e-3
+  
+trainer: 
+  accumulate_grad_batches: 8  # 1

@@ -1,0 +1,34 @@
+_target_: deepseqreen.models.components.cnn.PretrainOnLazyCNN
+
+pretrain:
+  _target_: peft.get_peft_model
+
+  model:
+    _target_: transformers.T5EncoderModel.from_pretrained
+    pretrained_model_name_or_path: resources/models/ankh_large_model/
+
+  peft_config:
+    _target_: peft.LoraConfig
+    inference_mode: ${eval:"False if '${job_name}' == 'train' else True"}
+    task_type: FEATURE_EXTRACTION
+    r: 8
+    lora_alpha: 32
+    lora_dropout: 0.1
+    bias: none
+    target_modules: 
+      - SelfAttention.k
+      - SelfAttention.v
+
+freeze_layers: null
+
+num_features: null
+embed_dim: null
+filters: [32, 64, 96]  # [32]  # [32, 64, 96]
+kernels: [4, 8, 12]  # [8]  # [4, 8, 12]
+# in_channels: ${data.protein_featurizer.in_channels}
+out_channels: null # 512 # 128  # 256
+activation:
+  _target_: torch.nn.ReLU
+pool:
+  _target_: torch.nn.AdaptiveAvgPool1d
+  output_size: 1

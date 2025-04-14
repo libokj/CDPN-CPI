@@ -1,0 +1,7 @@
+root_dir: .
+data_dir: ${paths.root_dir}/data
+log_dir: ${paths.root_dir}/logs
+resource_dir: ${paths.root_dir}/resources
+# path to output directory; pattern for path generation specified in `configs/hydra/default.yaml`
+output_dir: ${hydra:runtime.output_dir}
+work_dir: ${hydra:runtime.cwd}

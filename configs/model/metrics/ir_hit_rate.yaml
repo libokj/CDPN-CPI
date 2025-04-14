@@ -1,0 +1,3 @@
+RetrievalHitRate:
+  _target_: torchmetrics.retrieval.RetrievalHitRate
+  top_k: 100

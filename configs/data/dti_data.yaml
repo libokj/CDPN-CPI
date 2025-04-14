@@ -1,0 +1,22 @@
+_target_: deepseqreen.data.dti.DTIDataModule
+
+defaults:
+  - split: null
+  - drug_featurizer: none  # ???
+  - protein_featurizer: none  # ???
+  - collator: default
+
+task: ${task.task}
+num_classes: ${task.num_classes}
+
+data_dir: ${paths.data_dir}
+data_file: !!null
+train_val_test_split: !!null
+thresholds: !!null
+
+batch_size: ???
+num_workers: 0
+pin_memory: true
+query: X2
+extra_keys: ${oc.select:model.loss.losses, {}}
+#train: ${train}

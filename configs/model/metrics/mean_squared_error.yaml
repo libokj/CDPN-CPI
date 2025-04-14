@@ -1,0 +1,2 @@
+mean_squared_error:
+  _target_: torchmetrics.MeanSquaredError

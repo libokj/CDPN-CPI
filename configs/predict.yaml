@@ -1,0 +1,31 @@
+# @package _global_
+
+defaults:
+  - model: dti_model # fixed for web server version
+  - model/metrics: null
+  - task: default
+  - data: dti_data # fixed for web server version
+  - callbacks:
+    - model_summary
+    - rich_progress_bar
+    - csv_prediction_writer
+  - logger: csv
+  - trainer: default
+  - paths: default
+  - extras: default
+  - hydra: default
+  - _self_
+  - preset: null
+  - experiment: null
+  - sweep: null
+  - debug: null
+  - optional local: default
+
+job_name: "predict"
+
+tags: ???
+
+compile: null
+# passing checkpoint path is necessary for prediction
+ckpt_path: ???
+seed: 12345

@@ -1,0 +1,24 @@
+HR0_01:
+  _target_: deepseqreen.models.metrics.hit_rate.HitRate
+  alpha: 0.01
+
+HR0_02:
+  _target_: deepseqreen.models.metrics.hit_rate.HitRate
+  alpha: 0.02
+
+HR0_05:
+  _target_: deepseqreen.models.metrics.hit_rate.HitRate
+  alpha: 0.05
+
+HR0_10:
+  _target_: deepseqreen.models.metrics.hit_rate.HitRate
+  alpha: 0.10
+
+HR0_15:
+  _target_: deepseqreen.models.metrics.hit_rate.HitRate
+  alpha: 0.15
+
+HR0_20:
+  _target_: deepseqreen.models.metrics.hit_rate.HitRate
+  alpha: 0.20
+

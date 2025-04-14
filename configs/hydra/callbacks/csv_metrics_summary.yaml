@@ -1,0 +1,3 @@
+csv_metrics_summary:
+  _target_: deepseqreen.utils.hydra.CSVMetricsSummary
+  prefix: "test/"

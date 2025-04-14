@@ -1,0 +1,5 @@
+_target_: deepseqreen.models.components.mlp.ConcatMLP
+
+proj_dim: 512
+hidden_channels: [1024, 1024, 512]
+dropout: 0.2

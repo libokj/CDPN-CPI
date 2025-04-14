@@ -1,0 +1,4 @@
+_target_: deepseqreen.models.predictors.pmf_cpi.LSTMEncoder
+
+num_features: 768
+hidden_size: 128

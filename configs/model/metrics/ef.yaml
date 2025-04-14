@@ -1,0 +1,23 @@
+EF1:
+  _target_: deepseqreen.models.metrics.ef.EnrichmentFactor
+  alpha: 0.01
+
+EF2:
+  _target_: deepseqreen.models.metrics.ef.EnrichmentFactor
+  alpha: 0.02
+
+EF5:
+  _target_: deepseqreen.models.metrics.ef.EnrichmentFactor
+  alpha: 0.05
+
+EF10:
+  _target_: deepseqreen.models.metrics.ef.EnrichmentFactor
+  alpha: 0.10
+
+EF15:
+  _target_: deepseqreen.models.metrics.ef.EnrichmentFactor
+  alpha: 0.15
+
+EF20:
+  _target_: deepseqreen.models.metrics.ef.EnrichmentFactor
+  alpha: 0.20

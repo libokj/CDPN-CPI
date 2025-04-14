@@ -1,0 +1,6 @@
+_target_: deepseqreen.data.featurizers.token.sequence_to_token_ids
+_partial_: true
+
+tokenizer:
+  _target_: deepseqreen.data.featurizers.token.SmilesTokenizer
+  vocab_file: resources/vocabs/smiles.txt

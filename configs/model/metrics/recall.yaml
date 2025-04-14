@@ -1,0 +1,4 @@
+Recall0_5:
+  _target_: torchmetrics.Recall
+  task: ${task.task}
+  num_classes: ${task.num_classes}

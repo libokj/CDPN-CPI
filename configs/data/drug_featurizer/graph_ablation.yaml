@@ -1,0 +1,6 @@
+_target_: deepseqreen.data.featurizers.graph.smiles_to_graph
+_partial_: true
+
+atom_features:
+  _target_: deepseqreen.models.predictors.m_graph_dta.atom_features
+  _partial_: true

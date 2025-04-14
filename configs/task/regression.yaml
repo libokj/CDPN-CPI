@@ -1,0 +1,12 @@
+task: regression
+num_classes: null
+
+out:
+  _target_: torch.nn.LazyLinear
+  out_features: 1
+
+loss:
+  _target_: torch.nn.MSELoss
+
+activation:
+  _target_: torch.nn.Identity

@@ -1,0 +1,5 @@
+_target_: deepseqreen.models.predictors.transformer_cpi_2.TransformerEncoder
+
+n_layers: 3
+hid_dim: 768
+pool: false

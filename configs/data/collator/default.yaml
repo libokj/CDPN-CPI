@@ -1,0 +1,5 @@
+_target_: deepseqreen.data.utils.collator.collate_fn
+_partial_: true
+
+automatic_padding: false
+padding_value: 0.0

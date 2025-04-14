@@ -1,0 +1,30 @@
+# @package _global_
+defaults:
+  - override /model/optimizer: adam
+  - override /model/metrics: binary
+  - override /task: binary
+
+tags: ['benchmark', 'DTI']
+
+data:
+  data_dir: data/demo/
+  train_val_test_split: 
+    - train.csv
+    - val.csv
+    - test.csv
+
+model:
+  lr_scheduler:
+    scheduler:
+      patience: 2
+      factor: 0.5
+
+trainer:
+  max_epochs: 2
+
+callbacks:
+  model_checkpoint:
+    save_top_k: 1
+    every_n_epochs: 1
+  early_stopping:
+    patience: 2

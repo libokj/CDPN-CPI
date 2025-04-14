@@ -1,0 +1,16 @@
+defaults:
+  - drug_encoder@gnn: gat
+  - _self_
+
+_target_: deepseqreen.models.predictors.graph_dta.GraphDTA
+
+gnn:
+  num_features: 34
+  out_channels: 128
+  dropout: 0.2
+
+num_features_protein: 26
+n_filters: 32
+embed_dim: 128
+output_dim: 128
+dropout: 0.2

@@ -1,0 +1,35 @@
+# @package _global_
+defaults:
+  - model: dti_model # fixed for web server version
+  - task: default
+  - data: dti_data # fixed for web server version
+  - callbacks:
+      - model_summary
+      - rich_progress_bar
+  - logger: csv
+  - trainer: default
+  - paths: default
+  - extras: default
+  - hydra: default
+#  - hydra/callbacks:
+#      - csv_metrics_summary
+  - preset: null
+  - experiment: null
+  - sweep: null
+  - debug: null
+  - optional local: default
+  - _self_
+
+
+job_name: "test"
+
+tags: ???
+
+ckpt_path: ???  # passing checkpoint path is necessary for evaluation
+
+model:
+  optimizer: null
+  lr_scheduler: null
+
+data:
+  preprocess: false

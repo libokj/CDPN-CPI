@@ -1,0 +1,14 @@
+# train/test with many metrics at once
+
+defaults:
+  - auroc
+  - auprc
+  - specificity
+  - precision
+  - recall
+  - f1_score
+
+# Common virtual screening metrics:
+#  - ef
+#  - bedroc
+#  - hit_rate

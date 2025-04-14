@@ -1,0 +1,4 @@
+_target_: deepseqreen.models.predictors.m_graph_dta.GraphDenseNet
+
+num_features: 78
+out_channels: 128

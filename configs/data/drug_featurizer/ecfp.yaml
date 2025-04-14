@@ -1,0 +1,6 @@
+_target_: deepseqreen.data.featurizers.fingerprint.smiles_to_fingerprint
+_partial_: true
+
+fingerprint: MorganFP
+nBits: 1024
+radius: 2

@@ -1,0 +1,25 @@
+# deep learning
+torch>=2.0
+lightning>=2.0
+torch_geometric
+pyg_lib
+torch_scatter
+torch_sparse
+torch_cluster
+torch_spline_conv
+torchmetrics
+rdkit
+transformers
+scikit-learn
+networkx
+
+# configuration and utilities
+hydra-core
+hydra-colorlog
+rich
+pandas
+tensorboard
+
+# model-specific requirements
+subword-nmt
+tape_proteins

@@ -1,0 +1,4 @@
+_target_: deepseqreen.data.featurizers.graph.smiles_to_mol_features
+_partial_: true
+
+num_atom_feat: 34

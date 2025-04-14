@@ -1,0 +1,11 @@
+defaults:
+  - reduce_lr_on_plateau
+
+scheduler:
+  mode: min
+  factor: 0.1
+  patience: 10
+
+monitor: ${oc.select:callbacks.model_checkpoint.monitor,"val/loss"}
+interval: "epoch"
+frequency: 1

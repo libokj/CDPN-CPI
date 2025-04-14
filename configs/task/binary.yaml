@@ -1,0 +1,48 @@
+task: binary
+num_classes: null
+
+out:
+  _target_: torch.nn.LazyLinear
+  out_features: 1
+
+loss:
+  _target_: torch.nn.BCEWithLogitsLoss
+
+activation:
+  _target_: torch.nn.Sigmoid
+
+metrics:
+  AUROC:
+    _target_: torchmetrics.AUROC
+    task: ${task.task}
+    num_classes: ${task.num_classes}
+
+  AUPRC:
+    _target_: torchmetrics.AveragePrecision
+    task: ${task.task}
+    num_classes: ${task.num_classes}
+
+  Specificity0_5:
+    _target_: torchmetrics.Specificity
+    task: ${task.task}
+    num_classes: ${task.num_classes}
+
+  Recall0_5:
+    _target_: torchmetrics.Recall
+    task: ${task.task}
+    num_classes: ${task.num_classes}
+
+  Precision0_5:
+    _target_: torchmetrics.Precision
+    task: ${task.task}
+    num_classes: ${task.num_classes}
+
+  F1Score0_5:
+    _target_: torchmetrics.F1Score
+    task: ${task.task}
+    num_classes: ${task.num_classes}
+
+  Accuracy0_5:
+    _target_: torchmetrics.Accuracy
+    task: ${task.task}
+    num_classes: ${task.num_classes}

@@ -1,0 +1,11 @@
+_target_: deepseqreen.models.predictors.mol_trans.TransformerEncoder
+
+num_features: 23532
+max_sequence_length: ${data.drug_featurizer.max_sequence_length}  # 205
+emb_size: 384
+dropout_rate: 0.1
+intermediate_size: 1536
+num_attention_heads: 12
+attention_probs_dropout_prob: 0.1
+hidden_dropout_prob: 0.1
+pool: true

@@ -1,0 +1,4 @@
+AUPRC:
+  _target_: torchmetrics.AveragePrecision
+  task: ${task.task}
+  num_classes: ${task.num_classes}

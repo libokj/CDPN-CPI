@@ -1,0 +1,4 @@
+_target_: deepseqreen.models.predictors.monn.DualAttentionGatedRecurrentNetwork
+
+depth: 2
+hidden_size: 128

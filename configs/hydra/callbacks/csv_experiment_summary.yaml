@@ -1,0 +1,3 @@
+csv_experiment_summary:
+  _target_: deepseqreen.utils.hydra.CSVExperimentSummary
+  prefix: ['test/', 'epoch']
