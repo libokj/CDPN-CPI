@@ -1,7 +1,7 @@
-# CDPN-CPI
+# CDPN-VS
 
-DeepSEQreen is a PyTorch-based DTI prediction toolkit with a unified data
-pipeline and a modular framework. CDPN-CPI is a barebone version of DeepSEQreen for demonstrative purposes.
+DeepSEQreen is a PyTorch-based CPI prediction toolkit with a unified data
+pipeline and a modular framework. CDPN-VS is a barebone version of DeepSEQreen for demonstrative purposes.
 
 ## Installation
 
